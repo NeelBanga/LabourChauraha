@@ -76,7 +76,7 @@ include "menu.php"
             <div class="article">
                 <h2><span><a href="#">Labourers</a></span></h2>
                <div class="login">
-                <form name="form1" method="post" action="storage.php">
+                <form name="form1" method="post" action="lstorage.php">
                   <table width="100%" >
                     <tr>
                       <td><strong>Name</strong></td>

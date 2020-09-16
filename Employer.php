@@ -42,7 +42,7 @@ include "menu.php"
 <div class="article">
                 <h2><span><a href="#">Employer</a></span></h2>
 <div class="login">
-                <form name="form1" method="post" action="storage.php">
+                <form name="form1" method="post" action="estorage.php">
                   <table width="100%" border="0">
                     <tr>
                       <td><strong>Name</strong></td>
@@ -84,7 +84,7 @@ include "menu.php"
                     <tr>
                      <td><span id="sprytextfield3">
                         <label>
-                        <input type="varchar" name="varphonenuber" id="varlphonenumber">
+                        <input type="varchar" name="varphone" id="varlphone">
                         </label>
                       <span class="textfieldRequiredMsg">*</span></span></td>
                     </tr>
