@@ -27,7 +27,7 @@
     </style>
 </head>
 
-<body id="www-url-cz">
+<body >
 <!-- Main -->
 <div id="main" class="box">
 <?php 
@@ -37,19 +37,7 @@ include "Header.php"
 include "menu.php"
 ?>   
 <!-- Page (2 columns) -->
-    <div id="page" class="box">
-    <div id="page-in" class="box">
-
-        <div id="strip" class="box noprint">
-
-            <!-- RSS feeds -->
-            <hr class="noscreen" />
-
-            <!-- Breadcrumbs -->
-            <p id="breadcrumbs">&nbsp;</p>
-          <hr class="noscreen" />
-            
-        </div> <!-- /strip -->
+    
 
         <!-- Content -->
         <div id="content">
@@ -85,17 +73,13 @@ include "menu.php"
             
         </div> <!-- /content -->
 
-<?php
-include "right.php"
-?>
+
+
 
     </div> <!-- /page-in -->
     </div> <!-- /page -->
 
- 
-<?php
-include "footer.php"
-?>
+
 </div> <!-- /main -->
 
 </body>

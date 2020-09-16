@@ -11,10 +11,15 @@
 $varname=$_POST['varname'];
 $varaadhar=$_POST['varaadhar'];
 $varlocation=$_POST['varlocation'];
+$varphone=$_POST['varphone'];
+$varsdate=$_POST['varsdate'];
+$varedate=$_POST['varedate'];
+$varskills=$_POST['varskills'];
+$varmoney=$_POST['varmoney'];
 
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-$link = mysqli_connect("localhost", "root", "", "demo");
+$link = mysqli_connect("localhost", "root", "", "LabourChauraha");
  
 // Check connection
 if($link === false){
@@ -22,7 +27,7 @@ if($link === false){
 }
  
 // Attempt insert query execution
-$sql = "INSERT INTO labourers (name, aadhar , location) VALUES ('$varname', '$varaadhar' , '$varlocation')";
+$sql = "INSERT INTO labourers (name, aadhar , location,phone,sdate,edate,skills,money) VALUES ('$varname', '$varaadhar' , '$varlocation','$varphone','$varsdate','$varedate','$varskills','$varmoney')";
 if(mysqli_query($link, $sql)){
     echo "Records inserted successfully.";
 } else{

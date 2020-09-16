@@ -37,112 +37,78 @@ include "Header.php"
 <?php 
 include "menu.php"
 ?>   
-<!-- Page (2 columns) -->
-    <div id="page" class="box">
-    <div id="page-in" class="box">
 
-        <div id="strip" class="box noprint">
 
-            <!-- RSS feeds -->
-            <hr class="noscreen" />
-
-            <!-- Breadcrumbs -->
-            <p id="breadcrumbs">&nbsp;</p>
-          <hr class="noscreen" />
-            
-        </div> <!-- /strip -->
-
-        <!-- Content -->
-        <div id="content">
-
-           
-            <!-- /article -->
-
-            <hr class="noscreen" />
-
-           
-            <!-- /article -->
-
-            <hr class="noscreen" />
-            
-            <!-- Article -->
-           
-            <!-- /article -->
-
-            <hr class="noscreen" />
-
-            <!-- Article -->
-            <div class="article">
-                <h2><span><a href="#">Our Employers</a></span></h2>
-               
-
-                <p>
-                
-              <table width="100%" border="1" cellpadding="1" cellspacing="2" bordercolor="#006699" >
+<div class="article">
+                <h2><span><a href="#">Employer</a></span></h2>
+<div class="login">
+                <form name="form1" method="post" action="storage.php">
+                  <table width="100%" border="0">
+                    <tr>
+                      <td><strong>Name</strong></td>
+                    </tr>
+                    <tr>
+        <td><span id="sprytextfield1">
+                        <label>
+                        <input type="varchar" name="varname" id="varname">
+                        </label>
+                      <span class="textfieldRequiredMsg">*</span></span>
+          <label></label></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Aadhar</strong></td>
+                    </tr>
+                    <tr>
+                <td><span id="sprytextfield2">
+                        <label>
+                        <input type="varchar" name="varaadhar" id="varaadhar">
+                        </label>
+                      <span class="textfieldRequiredMsg">*</span></span></td>
+                    </tr>
+                    
+                    
+                    
+					<tr>
+                      <td><strong>Location</strong></td>
+                    </tr>
+                    <tr>
+                     <td><span id="sprytextfield2">
+                        <label>
+                        <input type="varchar" name="varlocation" id="varlocation">
+                        </label>
+                      <span class="textfieldRequiredMsg">*</span></span></td>
+                    </tr>
 <tr>
-<th height="32" bgcolor="#006699" class="style3"><div align="left" class="style9 style5 style2"><strong>Company Name</strong></div></th>
-<th bgcolor="#006699" class="style3"><div align="left" class="style9 style5 style2"><strong>Contact Person</strong></div></th>
-<th bgcolor="#006699" class="style3"><div align="left" class="style9 style5 style2"><strong>Email</strong></div></th>
-</tr>
-<?php
-// Establish Connection with Database
-$con = mysql_connect("localhost","root");
-// Select Database
-mysql_select_db("job", $con);
-// Specify the query to execute
-$sql = "select * from Employer_Reg where Status='Confirm'";
-// Execute query
-$result = mysql_query($sql,$con);
-// Loop through each records 
-while($row = mysql_fetch_array($result))
-{
-$CompanyName=$row['CompanyName'];
-$ContactPerson=$row['ContactPerson'];
-$Email=$row['Email'];
+                      <td><strong>Phone Number</strong></td>
+                    </tr>
+                    <tr>
+                     <td><span id="sprytextfield3">
+                        <label>
+                        <input type="varchar" name="varphonenuber" id="varlphonenumber">
+                        </label>
+                      <span class="textfieldRequiredMsg">*</span></span></td>
+                    </tr>
+                    
+                    <tr>
+                      <td><label>
+                        <div align="center">
+                          <input type="submit" name="button" id="button" value="Store">
+                          </div>
+                      </label></td>
+                    </tr>
+                  </table>
+      </form>
+              </div>
+                <br/>
+     
+          </div> <!-- /col-in -->
+</div> <!-- /col -->
+        <script type="text/javascript">
+<!--
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2");
+//-->
+</script> 
 
-?>
-<tr>
-<td class="style3"><div align="left" class="style9 style5"><strong><?php echo $CompanyName;?></strong></div></td>
-<td class="style3"><div align="left" class="style9 style5"><strong><?php echo $ContactPerson;?></strong></div></td>
-<td class="style3"><div align="left" class="style9 style5"><strong><?php echo $Email;?></strong></div></td>
-</tr>
-<?php
-}
-// Retrieve Number of records returned
-$records = mysql_num_rows($result);
-?>
-
-<?php
-// Close the connection
-mysql_close($con);
-?>
-</table>
-    </td>
-  </tr>
-</table>
-                </p>
-
-                <div align="center"><a href="EmployerReg.php"><strong>New Employer? Register Here</strong></a>
-                  </div>
-              <p class="btn-more box noprint">&nbsp;</p>
-          </div> <!-- /article -->
-
-            <hr class="noscreen" />
-            
-        </div> <!-- /content -->
-
-<?php
-include "right.php"
-?>
-
-    </div> <!-- /page-in -->
-    </div> <!-- /page -->
-
- 
-<?php
-include "footer.php"
-?>
 </div> <!-- /main -->
 
-</body>
-</html>

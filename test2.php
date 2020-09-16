@@ -1,7 +1,7 @@
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-$link = mysqli_connect("localhost", "root", "", "demo");
+$link = mysqli_connect("localhost", "root", "", "LabourChauraha");
  
 // Check connection
 if($link === false){
@@ -17,12 +17,22 @@ if($result = mysqli_query($link, $sql)){
                 echo "<th>Name</th>";
                 echo "<th>Aadhar</th>";
                 echo "<th>Location</th>";
+				echo "<th>Phone</th>";
+                echo "<th>Start Date</th>";
+                echo "<th>End Date</th>";
+				echo "<th>Skills</th>";
+				echo "<th>Pay</th>";
             echo "</tr>";
         while($row = mysqli_fetch_array($result)){
             echo "<tr>";
                 echo "<td>" . $row['name'] . "</td>";
                 echo "<td>" . $row['aadhar'] . "</td>";
-                echo "<td>" . $row['location'] . "</td>";
+                echo "<td>" . $row['location'] . "</td>"; 
+				echo "<td>" . $row['phone'] . "</td>";
+                echo "<td>" . $row['sdate'] . "</td>";
+                echo "<td>" . $row['edate'] . "</td>";
+                echo "<td>" . $row['skills'] . "</td>";
+                echo "<td>" . $row['money'] . "</td>";
             echo "</tr>";
         }
         echo "</table>";

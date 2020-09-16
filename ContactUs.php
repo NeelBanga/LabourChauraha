@@ -108,9 +108,6 @@ include "menu.php"
             
         </div> <!-- /content -->
 
-<?php
-include "right.php"
-?>
 
     </div> <!-- /page-in -->
     </div> <!-- /page -->
