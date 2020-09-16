@@ -1,0 +1,26 @@
+Problem Definition
+Employment rates has been very low leading many people to be unemployed and been pushed towards harsh labour. We all know how hard it is for them in harsh conditions and on top of that they are haunted by job insecurity. We are creating a platform where labours and employers can come in contact and make their lives a little easier.
+Labour market discrimination is defined as a situation where workers or groups of workers are treated differently in terms of recruitment, pay, benefits and promotion from other workers or groups due to their non-economic characteristics, including gender, race, religion and age. This means that while workers may be equally productive, they are not treated the same.
+Also, some workers who fear they may be discriminated against may not seek employment in those firms that they perceive practice discrimination. Hence they do not supply their labour to those types of firms. This shifts the potential supply curve to the left, and raises the relative wage rate of the favoured group.
+So, by providing more employment oppurtunities to the labours we can potentially increase the overall wage of the labours.
+Since the boom of internet we need to build a network or a community of this kind in internet and our website allows us to do just that.
+
+User Manual
+Steps
+1)Enter the website- URL
+2)Enter labour details and register.
+3)Employer must visit the page- URL
+4)Labour has to wait till an employer selects them from the list.
+
+Modules
+1) AboutUs.php
+This module directs to a page containing the details of the developers of the website.
+2) ContactUs.php
+This module directs to a page containing the our details for any queries.
+3) index.php
+This module creates a home page for the website where labours can register by giving their employement details.
+4) storage.php
+This module gets the employment details from index.php can stores them in mysql database for the website.
+
+Overall Functionality
+The site- URL leads to the home of the website where labours can provide their employment details which gets stored in a database in mysql for the website, and all the information about the labours from the database are imported to the site- URL, from which employers can select the labours that satisfies their specifications.
